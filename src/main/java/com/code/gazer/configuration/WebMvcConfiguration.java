@@ -28,8 +28,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
   @Bean
   public ClassLoaderTemplateResolver classLoaderTemplateResolver() {
-    ClassLoaderTemplateResolver templateResolver =
-        new ClassLoaderTemplateResolver();
+    ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
     templateResolver.setPrefix("/resources/**");
     templateResolver.setSuffix(".html");
     templateResolver.setTemplateMode(TemplateMode.HTML);
