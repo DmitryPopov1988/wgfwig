@@ -23,12 +23,12 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
   @Override
   public void addViewControllers(final ViewControllerRegistry registry) {
-    registry.addViewController("/").setViewName("/main");
+    registry.addViewController("/").setViewName("/index");
   }
 
   @Bean
   public ClassLoaderTemplateResolver classLoaderTemplateResolver() {
-    ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
+    final ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
     templateResolver.setPrefix("/resources/**");
     templateResolver.setSuffix(".html");
     templateResolver.setTemplateMode(TemplateMode.HTML);
