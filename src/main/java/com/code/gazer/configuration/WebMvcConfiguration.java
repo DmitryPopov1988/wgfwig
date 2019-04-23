@@ -28,14 +28,14 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
   @Bean
   public ClassLoaderTemplateResolver classLoaderTemplateResolver() {
-    final ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
-    templateResolver.setPrefix("/resources/**");
-    templateResolver.setSuffix(".html");
-    templateResolver.setTemplateMode(TemplateMode.HTML);
-    templateResolver.setCharacterEncoding("UTF-8");
-    templateResolver.setOrder(1);
-    templateResolver.setCheckExistence(true);
-    return templateResolver;
+    final ClassLoaderTemplateResolver cltr = new ClassLoaderTemplateResolver();
+    cltr.setPrefix("/resources/**");
+    cltr.setSuffix(".html");
+    cltr.setTemplateMode(TemplateMode.HTML);
+    cltr.setCharacterEncoding("UTF-8");
+    cltr.setOrder(1);
+    cltr.setCheckExistence(true);
+    return cltr;
   }
 
 }
