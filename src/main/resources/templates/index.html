@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="https://spring.io/favicon.ico">
@@ -23,15 +23,15 @@
 </header>
 
 <div class="intro">
-    <div class="section">
-      <div class="section_left">1</div>
-      <div class="section_right">2</div>
-      <footer class="footer">
-        <p><font color="white">Codegazer</font></p>
-      </footer>
+  <div class="section">
+    <div class="section_left">
+        <img class="index_image" th:src="@{/static/images/big.jpg}"/>
     </div>
-
-
+    <div class="section_right">2</div>
+    <footer class="footer">
+      <p><font color="white"><font color="#FFFFFF">© 2019 Codegazer.by </font></p>
+    </footer>
+  </div>
 </div>
 
 
