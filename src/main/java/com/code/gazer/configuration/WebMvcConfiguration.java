@@ -24,6 +24,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
   @Override
   public void addViewControllers(final ViewControllerRegistry registry) {
     registry.addViewController("/").setViewName("index.html");
+    registry.addViewController("/contact").setViewName("contact.html");
   }
 
   @Bean
