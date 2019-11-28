@@ -1,4 +1,6 @@
 FROM openjdk:11
+LABEL maintainer="dpopov88@me.com"
+
 ADD target/gazer.jar gazer.jar
-EXPOSE 8080
+
 ENTRYPOINT ["java", "-jar", "gazer.jar"]

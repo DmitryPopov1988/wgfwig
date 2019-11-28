@@ -9,7 +9,7 @@ public class GlobalExceptionHandler extends RuntimeException {
 
   @ExceptionHandler(Exception.class)
   public ModelAndView catchException(final Exception exc) {
-    final ModelAndView modelAndView = new ModelAndView("error");
+    final ModelAndView modelAndView = new ModelAndView("error.html");
     modelAndView.addObject("error", exc.getMessage());
     return modelAndView;
   }

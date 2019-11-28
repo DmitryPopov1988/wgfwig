@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GazerApplication {
 
   public static void main(final String[] args) {
-
     SpringApplication.run(GazerApplication.class, args);
   }
 
