@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
 
 @ControllerAdvice
-public class GlobalExceptionHandler extends RuntimeException {
+public class GlobalExceptionHandler {
 
-  @ExceptionHandler(Exception.class)
-  public ModelAndView catchException(final Exception exc) {
-    final ModelAndView modelAndView = new ModelAndView("error.html");
-    modelAndView.addObject("error", exc.getMessage());
-    return modelAndView;
-  }
+    @ExceptionHandler(Exception.class)
+    public ModelAndView catchException(final Exception exception) {
+        final ModelAndView modelAndView = new ModelAndView ("error.html");
+        modelAndView.addObject ("error", exception.getMessage ( ));
+        return modelAndView;
+    }
 
 }
