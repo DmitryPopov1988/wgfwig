@@ -1,58 +1,34 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <link rel="icon" type="image/png" href="https://spring.io/favicon.ico">
-  <style>
-.outer {
-  width:100%;
-  text-align: center;
-}
-.table {
-  padding:10px;
-  padding-left:520px;
-}
-.main {
-	position: center;
-	padding: 10px 40px;
-  margin: 0px 10px 10px 530px;
-  float: left;
-	border-radius: 10px;
-	font-family: 'Pacifico', cursive;
-	font-size: 25px;
-	color: #FFF;
-	text-decoration: none;
-	transition: all 0.1s;
-	-webkit-transition: all 0.1s;
-  background-color: #F2CF66;
-	border-bottom: 5px solid #D1B358;
-	text-shadow: 0px -2px #D1B358;
-}
-.main:active {
-	transform: translate(0px,5px);
-  -webkit-transform: translate(0px,5px);
-	border-bottom: 1px solid;
-}
-  </style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/css/error.css">
+  <title th:text="@{${error} + ' - Codegazer'}"></title>
 </head>
 <body>
-<div class="outer">
-  <h1>Error Page</h1>
-  <img th:src="@{https://www.freeiconspng.com/uploads/warning-error-icon-png-33.png}" />
-
-  <table class="table" th:object="${error}">
-    <tr>
-      <th>EXCEPTION:</th>
-      <td><b th:text="${error}"></b></td>
-    </tr>
-  </table>
-
-  <h2>Please, contact with me by email: dpopov88@me.com</h2>
-  <br /> <br />
-
-  <img th:src="@{/static/images/bet.png}"/>
-
-  <div class="inner">
-    <button class="main" type="submit" onClick="location.href='/'">Main menu</button></div>
+<header class="header">
+  <div class="container">
+    <div class="header_inner">
+      <div class="header_logo">Codegazer</div>
+      <nav class="nav">
+        <a class="nav_link" href="/">Home</a>
+        <a class="nav_link" href="/error">About</a>
+        <a class="nav_link" href="/contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="intro">
+  <div class="section">
+    <div class="error_block">
+      <b class="error_status" th:text="${status}"></b><br>
+      <b class="error_message" th:text="${error}"></b>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2019 Codegazer</p>
+  </footer>
 </div>
 </body>
 </html>
