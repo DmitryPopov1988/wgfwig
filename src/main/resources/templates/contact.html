@@ -2,15 +2,39 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <title>Codegazer</title>
 </head>
-<script src="/js/angular.js"></script>
+<script src="/js/jquery-2.1.1.js"></script>
+<script src="/js/validate_email.js"></script>
 <body>
+<header class="header">
+  <div class="container">
+    <div class="header_inner">
+      <div class="header_logo">Codegazer</div>
+      <nav class="nav">
+        <a class="nav_link" href="/">Home</a>
+        <a class="nav_link" href="/error">About</a>
+        <a class="nav_link" href="/contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="intro">
+  <div class="section">
+    <form method="get">
+      <p>Enter an email address:</p>
+      <p id="demo"></p>
+      <input id="email">
+      <input id="message">
+      <button type="button" onclick="validate()">VALIDATE</button>
+    </form>
 
-<div ng-app="">
-  <p>LALA: <input type="text" ng-model="name"></p>
-  <p ng-bind="name"></p>
+    <h2 id='result'></h2>
+  </div>
+  <footer class="footer">
+    <p>© 2019 Codegazer</p>
+  </footer>
 </div>
-
 </body>
 </html>
