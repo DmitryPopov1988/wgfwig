@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="/css/index.css">
-  <title>Codegazer</title>
+  <title>Contact - Codegazer</title>
 </head>
 <script src="/js/jquery-2.1.1.js"></script>
-<script src="/js/validate_email.js"></script>
+<script src="/js/validate.email.js"></script>
+<script src="/js/message.sender.js"></script>
 <body>
 <header class="header">
   <div class="container">
@@ -27,7 +28,7 @@
       <p id="demo"></p>
       <input id="email">
       <input id="message">
-      <button type="button" onclick="validate()">VALIDATE</button>
+      <button type="button" onclick="validateAndSendMessage()">VALIDATE</button>
     </form>
 
     <h2 id='result'></h2>
