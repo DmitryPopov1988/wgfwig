@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ContactMessageController {
 
   @PostMapping("/message")
-  public ResponseEntity<Message> postMessage(@RequestBody final Message message) {
+  public final ResponseEntity<Message> sendMessage(@RequestBody final Message message) {
     System.out.println(message);
 
     return ResponseEntity.ok(message);
