@@ -26,13 +26,19 @@
   <div class="section">
     <div class="contact">
       <div class="left_section">
-        <form method="post">
-          <p>Enter an email address:</p>
-          <p id="demo"></p>
-          <input id="email">
-          <input id="message">
-          <button type="button" onclick="validateAndSendMessage()">VALIDATE</button>
-        </form>
+        <div class="leave_message">
+          <p class="leave_message_text">Leave a message below</p>
+          <form method="post">
+            <fieldset class="fieldset">
+              <p id="demo"></p>
+              <label for="email">Email*</label>
+              <input id="email" type="text">
+              <label for="message">Message</label>
+              <textarea id="message"></textarea>
+              <input type="button" onclick="validateAndSendMessage()">
+            </fieldset>
+          </form>
+        </div>
       </div>
       <div class="right_section">
         <div class="map">
@@ -42,7 +48,7 @@
               allowfullscreen=""></iframe>
         </div>
         <nav class="on_map">
-          <a class="nav_link" href="/">Open in Google</a>
+          <a class="nav_link" href="https://www.google.ru/maps">Open in Google</a>
         </nav>
       </div>
     </div>
