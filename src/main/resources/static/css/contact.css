@@ -19,8 +19,8 @@
 
 .map {
     margin-top: 60px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 60px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -87,7 +87,7 @@ input[type=text]:hover {
 
 textarea {
     width: 100%;
-    height: 240px;
+    height: 284px;
     padding: 12px 20px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -109,19 +109,10 @@ textarea:hover {
     outline:solid 4px #FFCA26;
 }
 
-
-input[type=button] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-
-input[type=button]:hover {
-    background-color: #45a049;
+.send_message {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-right: 20px;
 }
