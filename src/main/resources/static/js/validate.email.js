@@ -1,12 +1,9 @@
 function validateAndSendMessage() {
-  var $result = $("#result");
   var email = $("#email").val();
-  $result.text("");
   if (validateEmail(email)) {
-    document.getElementById("demo").innerHTML = email;
+    alert(email);
     sendEmail(email);
   } else {
-   document.getElementById("demo").innerHTML = email;
   }
 }
 

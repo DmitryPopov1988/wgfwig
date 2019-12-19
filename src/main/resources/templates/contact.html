@@ -25,33 +25,20 @@
 <div class="intro">
   <div class="section">
     <div class="contact">
-      <div class="left_section">
-        <div class="leave_message">
+      <div class="contact_inner">
+        <form method="post">
           <p class="leave_message_text">Leave a message below</p>
-          <form method="post">
-            <fieldset class="fieldset">
-              <p id="demo"></p>
-              <label for="email">Email*</label>
-              <input id="email" type="text">
-              <label for="message">Message</label>
-              <textarea id="message"></textarea>
-              <nav class="send_message">
-                <a class="nav_link" type="button" onclick="validateAndSendMessage()">Send your message</a>
-              </nav>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-      <div class="right_section">
-        <div class="map">
-          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d153.20549197026855!2d23.693051189678066!3d52.09269228271508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1576171841910!5m2!1sru!2sby"
-              width="500" height="500" frameborder="0" style="border:0;"
-              allowfullscreen=""></iframe>
-        </div>
-        <nav class="on_map">
-          <a class="nav_link" href="https://www.google.ru/maps">Open in Google</a>
-        </nav>
+          <fieldset class="fieldset">
+            <label>Email*</label>
+            <input type="email" id="email" required/>
+            <label for="message">Message</label>
+            <textarea class="message" id="message" required></textarea>
+          </fieldset>
+          <nav class="send_message">
+            <a class="nav_link" type="button" onclick="validateAndSendMessage()">Send your
+              message</a>
+          </nav>
+        </form>
       </div>
     </div>
   </div>

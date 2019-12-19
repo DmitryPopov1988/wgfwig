@@ -4,7 +4,7 @@ body {
 
     font-size: 17px;
     background: #24292E;
-    color: #FFFFFF;
+    color: white;
 }
 
 h1 {
@@ -67,7 +67,7 @@ h1 {
     vertical-align: top;
     margin: 0 25px;
     position: relative;
-    color: #FFFFFF;
+    color: white;
     text-decoration: none;
     font-weight: 700;
 
